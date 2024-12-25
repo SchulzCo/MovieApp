@@ -1,0 +1,17 @@
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  @media (min-width: 768px) {
+    input {
+      width: 15%;
+    }
+  }
+  
+  p {
+    font-style: italic;
+    color: gray;
+  }
+  

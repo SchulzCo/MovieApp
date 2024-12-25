@@ -21,8 +21,8 @@ export class MovieListComponent implements OnInit {
     this.movies = this.movieService.getMovies();
   }
 
-  onMovieSelected(movieTitle: string) {
+  onMovieSelected(movieTitle: string) : void {
     this.selectedMovie = movieTitle;
   }
-}
 
+}

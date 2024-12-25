@@ -8,11 +8,14 @@ import { CommonModule } from '@angular/common';
   templateUrl: './movie-item.component.html',
   styleUrl: './movie-item.component.css'
 })
+
 export class MovieItemComponent {
-  @Input() movie: any;
+  @Input() movie!: { title: string, year: number, description: string };
   @Output() movieSelected = new EventEmitter<string>();
 
-  selectMovie() {
-    this.movieSelected.emit(this.movie.title);
+  selectMovie(): void {
+    if (this.movie) {
+      this.movieSelected.emit(this.movie.title);
+    }
   }
 }
