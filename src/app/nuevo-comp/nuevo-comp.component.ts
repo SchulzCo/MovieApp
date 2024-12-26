@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
   templateUrl: './nuevo-comp.component.html',
   styleUrl: './nuevo-comp.component.css'
 })
+
 export class NuevoCompComponent {
-   mensaje1: string = 'Bienvenidos!!!!'; mensaje2: string = 'Un placer coincidir'; mostrarMensaje: boolean = false
+  mensaje1: string = 'Bienvenidos!!!!';
+  mensaje2: string = 'Un placer coincidir';
+  mostrarMensaje: boolean = false;
+
+  toggleMensaje() {
+    this.mostrarMensaje = !this.mostrarMensaje;
+  }
 }

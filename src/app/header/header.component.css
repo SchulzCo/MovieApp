@@ -1,14 +1,17 @@
-header {
-    background-color: #232538;
-    padding: 10px;
-    text-align: center;
-    border-bottom: 5px solid #25282f;
-    border-radius: 20px;
-  }
+.header-container {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+}
 
-  h1 {
-    margin: 0;
-    color: #fff;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-  }
-  
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.title {
+  color: #fff;
+  font-size: 1.5em;
+}

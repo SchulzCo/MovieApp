@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
   templateUrl: './segundo-comp.component.html',
   styleUrl: './segundo-comp.component.css'
 })
+
 export class SegundoCompComponent {
-objeto = { propiedad1: 'Valor 1', propiedad2: 'Valor 2', propiedad3: 'Valor 3', propiedad4: 'Valor 4'};
+  objeto = {
+    propiedad1: 'Info',
+    propiedad2: 'Peliculas',
+    propiedad3: 'Series',
+    propiedad4: 'Estrenos'
+  };
 }

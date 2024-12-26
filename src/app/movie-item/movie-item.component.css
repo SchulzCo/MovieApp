@@ -1,19 +1,30 @@
-.movie-card {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 10px;
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.movie-card img {
-  width: 100px;
-  height: 150px;
-  object-fit: cover;
+.movie-item {
+  border: 1px solid #ddd;
   border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  text-align: left;
 }
 
-.movie-card:hover {
-  transform: scale(1.05);
+.movie-item-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.movie-item-year,
+.movie-item-description {
+  font-size: 1em;
+  color: #666;
+  margin-top: 5px;
+}
+
+
+.movie-image {
+  display: block; /* Asegura que la imagen es un bloque */
+  width: 25%;
+  height: auto;
+  border-radius: 5px;
+  margin: 0 auto 10px; /* Centro horizontalmente y añade margen inferior */
 }

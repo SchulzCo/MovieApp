@@ -1,2 +1,5 @@
-<app-search-bar></app-search-bar>
-<app-movie-list></app-movie-list>
+<div *ngFor="let movie of movies">
+    <app-movie-item [movie]="movie" (movieSelected)="onMovieSelected($event)"></app-movie-item>
+  </div>
+  <p *ngIf="selectedMovie">Película seleccionada: {{selectedMovie}}</p>
+  

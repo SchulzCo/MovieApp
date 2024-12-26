@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { Movie } from '../movie';
 
 @Component({
   selector: 'app-movie-item',
@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 
 export class MovieItemComponent {
-  @Input() movie!: { title: string, year: number, description: string };
+  @Input() movie: Movie | undefined;
   @Output() movieSelected = new EventEmitter<string>();
 
   selectMovie(): void {

@@ -1,0 +1,74 @@
+.series-info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .series-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .series-title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #2c3e50;  
+  }
+  
+  .series-description {
+    text-align: center;  
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 20px;
+  }
+  
+  .search-bar {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    width: 80%;
+    max-width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .episodes-list {
+    text-align: center;  
+  }
+  
+  .episode-container {
+    display: inline-block;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+        text-align: left;  }
+  
+  .episode-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2c3e50;  
+  }
+  
+  .episode-season,
+  .episode-episode {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2980b9;  
+  }
+  
+  .episode-released,
+  .episode-rating,
+  .episode-description {
+    font-size: 1em;
+    color: #666;  
+    margin-top: 5px;
+  }

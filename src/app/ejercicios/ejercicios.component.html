@@ -1,1 +1,9 @@
-<p>ejercicios works!</p>
+
+<h2>{{ title }}</h2>
+<div *ngFor="let ejercicio of ejercicios" class="ejercicio-container">
+  <h3 class="ejercicio-title">{{ ejercicio.title }}</h3>
+  <p *ngIf="mostrarDescripcion" class="ejercicio-description">{{ ejercicio.description }}</p>
+</div>
+<button (click)="mostrarDescripcion = !mostrarDescripcion">
+  {{ mostrarDescripcion ? 'Ocultar Descripciones' : 'Mostrar Descripciones' }}
+</button>

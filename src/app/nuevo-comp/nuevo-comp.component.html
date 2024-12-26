@@ -1,2 +1,15 @@
-<p>{{ mensaje1 }}</p>
-<p *ngIf="mostrarMensaje">{{ mensaje2 }}</p>
+
+  <div class="message-container">
+    <div class="gif-container-left">
+      <img src="https://lopegonzalez.es/wp-content/uploads/2024/02/minions.gif" alt="Welcome GIF" class="welcome-gif">
+    </div>
+    <div class="text-container">
+      <p *ngIf="mostrarMensaje">{{ mensaje1 }}</p>
+      <p *ngIf="mostrarMensaje">{{ mensaje2 }}</p>
+      <button (click)="toggleMensaje()">Mostrar Mensaje</button>
+    </div>
+    <div class="gif-container-right">
+      <img src="https://lopegonzalez.es/wp-content/uploads/2024/02/minions.gif" alt="Welcome GIF" class="welcome-gif">
+    </div>
+  </div>
+  

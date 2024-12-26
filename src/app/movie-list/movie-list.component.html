@@ -1,6 +1,7 @@
-  
-  <div *ngFor="let movie of movies">
+<div class="movie-list">
+  <app-search-bar (searchTermChanged)="onSearchTermChanged($event)"></app-search-bar>
+  <div *ngFor="let movie of filteredMovies" class="movie-item-container">
     <app-movie-item [movie]="movie" (movieSelected)="onMovieSelected($event)"></app-movie-item>
   </div>
-  <p *ngIf="selectedMovie">Película seleccionada: {{selectedMovie}}</p>
-  
+  <p *ngIf="selectedMovie" class="selected-movie">Película seleccionada: {{ selectedMovie }}</p>
+</div>

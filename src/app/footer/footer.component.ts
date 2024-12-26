@@ -7,6 +7,15 @@ import { Component } from '@angular/core';
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.css'
 })
+
 export class FooterComponent {
-  footerText: string = 'CoMovieApp';
+  footerText: string = '© 2024 CoMovieApp. Todos los derechos reservados.';
+  contactEmail: string = 'contacto@comovieapp.com';
+  socialLinks = [
+    { name: 'Facebook', url: 'https://www.facebook.com/CoMovieApp' },
+    { name: 'Twitter', url: 'https://twitter.com/CoMovieApp' },
+    { name: 'Instagram', url: 'https://www.instagram.com/CoMovieApp' }
+  ];
 }
+
+

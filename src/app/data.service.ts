@@ -5,10 +5,10 @@ import { Injectable } from '@angular/core';
 })
 export class DataService {
   private objetos = [
-    { propiedad1: 'Valor 1', propiedad2: 'Valor 2', propiedad3: 'Valor 3', propiedad4: 'Valor 4' },
-    { propiedad1: 'Valor 5', propiedad2: 'Valor 6', propiedad3: 'Valor 7', propiedad4: 'Valor 8' },
-    { propiedad1: 'Valor 9', propiedad2: 'Valor 10', propiedad3: 'Valor 11', propiedad4: 'Valor 12' },
-    { propiedad1: 'Valor 13', propiedad2: 'Valor 14', propiedad3: 'Valor 15', propiedad4: 'Valor 16' }
+    { propiedad1: 'The Shawshank Redemption', propiedad2: 'The Godfather', propiedad3: 'The Dark Knight', propiedad4: 'The Godfather Part II' },
+    { propiedad1: '12 Angry Men', propiedad2: 'The Lord of the Rings: The Return of the King', propiedad3: 'Schindlers List', propiedad4: 'Pulp Fiction' },
+    { propiedad1: 'The Lord of the Rings: The Fellowship of the Ring', propiedad2: 'The Good, the Bad and the Ugly', propiedad3: 'Forrest Gump', propiedad4: 'The Lord of the Rings: The Two Towers' },
+    { propiedad1: 'Fight Club', propiedad2: 'Inception', propiedad3: 'Star Wars: Episode V - The Empire Strikes Back', propiedad4: 'The Matrix' }
   ];
   getObjetos() {
     return this.objetos;

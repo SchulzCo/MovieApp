@@ -1,11 +1,40 @@
-div {
-    margin-bottom: 20px;
-  }
-  p {
-    color: red;
-    font-size: 16px;
-    margin: 0;
-    padding: 5px;
-    border: 1px solid #ccc;
-  }
-  
+.horizontal-menu {
+  background-color: #272727;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.menu-title {
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.horizontal-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.horizontal-menu li {
+  margin: 5px;
+}
+
+.horizontal-menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #444;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.horizontal-menu li a:hover {
+  background-color: #555;
+}

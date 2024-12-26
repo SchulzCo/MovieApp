@@ -7,6 +7,8 @@ import { CommonModule } from '@angular/common';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
+
 export class HeaderComponent {
-headerText: string = 'CoMovieApp';
+  title: string = 'CoMovieApp';  // Título de la aplicación
+  logoUrl: string = './favicons.ico';  // URL de la imagen del logo
 }

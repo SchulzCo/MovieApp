@@ -1,2 +1,7 @@
-<input type="text" placeholder="Buscar películas..." [(ngModel)]="searchTerm">
+<input
+  type="text"
+  placeholder="Buscar películas..."
+  [(ngModel)]="searchTerm"
+  (input)="onSearchTermChange()"
+/>
 <p>Buscando: {{ searchTerm }}</p>

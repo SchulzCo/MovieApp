@@ -1,4 +1,11 @@
-<footer>
+<footer class="footer-container">
+  <div class="footer-content">
     <p>{{ footerText }}</p>
-  </footer>
-  
+    <p>Contacto: <a href="mailto:{{ contactEmail }}">{{ contactEmail }}</a></p>
+    <ul class="social-links">
+      <li *ngFor="let link of socialLinks">
+        <a [href]="link.url" target="_blank">{{ link.name }}</a>
+      </li>
+    </ul>
+  </div>
+</footer>

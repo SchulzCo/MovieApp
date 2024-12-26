@@ -1,0 +1,32 @@
+
+  <div class="series-info">
+    <img src="https://es.web.img3.acsta.net/c_300_300/pictures/22/02/04/12/42/2264086.jpg" alt="From Series" class="series-image">
+    <h2 class="series-title">From</h2>
+
+    <p class="series-description">
+        Episodios emitidos el 20 de febrero de 2022. 
+        La trama sigue a la familia Matthews en un viaje en RV que toma un giro aterrador cuando son desviados a un pequeño pueblo del que no pueden salir. La historia se vuelve aún más escalofriante cuando su RV se estrella y los residentes del pueblo intentan salvarlos antes de que anochezca.
+      </p>
+      
+  </div>
+  
+  <div class="search-bar">
+    <input
+      type="text"
+      placeholder="Buscar episodios..."
+      [(ngModel)]="searchTerm"
+      (input)="filterSeries()"
+    />
+  </div>
+  
+  <div class="episodes-list">
+    <div *ngFor="let episode of filteredSeries" class="episode-container">
+      <h3 class="episode-title">{{ episode.Title }}</h3>
+      <p class="episode-season">Temporada: 1</p> <!-- Temporada fija para Season 1 -->
+      <p class="episode-episode">Episodio: {{ episode.Episode }}</p>
+      <p class="episode-released">Fecha de lanzamiento: {{ episode.Released }}</p>
+      <p class="episode-rating">Calificación IMDB: {{ episode.imdbRating }}</p>
+      <p class="episode-description">ID IMDB: {{ episode.imdbID }}</p>
+    </div>
+  </div>
+  

@@ -1,11 +1,15 @@
-<nav>
-    <ul>
-      <li *ngFor="let obj of objetos">
-        <p>{{ obj.propiedad1 }}</p>
-        <p>{{ obj.propiedad2 }}</p>
-        <p>{{ obj.propiedad3 }}</p>
-        <p>{{ obj.propiedad4 }}</p>
-      </li>
-    </ul>
-  </nav>
-  
+<div class="search-bar">
+  <input type="text" #searchInput placeholder="Buscar película..." (input)="onSearchTermChanged(searchInput.value)" />
+</div>
+
+<nav class="horizontal-menu">
+  <h2 class="menu-title">Top mejores películas</h2>
+  <ul>
+    <li *ngFor="let objeto of filteredObjetos; let i = index" #objetoItem>
+      <a href="#">{{ objeto.propiedad1 }}</a>
+      <a href="#">{{ objeto.propiedad2 }}</a>
+      <a href="#">{{ objeto.propiedad3 }}</a>
+      <a href="#">{{ objeto.propiedad4 }}</a>
+    </li>
+  </ul>
+</nav>
